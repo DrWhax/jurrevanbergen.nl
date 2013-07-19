@@ -1,0 +1,40 @@
+# Configuration for this blog, it's in TOML:
+# https://github.com/mojombo/toml
+
+
+# the server's root-path. if you are deploying this site to a
+# sub_directory, you must set it. For instance, your blog will
+# be hosted on 'http://some-domain.com/blog', you have to set
+# root_path="/blog", else, if you are deploying this site right
+# under the server(even a sub_domain), do nothing, just leave
+# here blank: "". But, note that when in localhost, your site
+# will run from root regadless of 'root_path', so you must run
+# `lilac build` before deploying this site to remote server.
+#root_path = "/var/www/vhosts/jurrevanbergen.nl/public_html/blog/"
+root_path = "/blog"
+
+[blog]
+# What is your blog's name?
+name = "Jurre's digital notepad"
+
+# What is your blog about?
+description = "The formulating of my thoughts."
+
+# your blog's url(ends without '/'). This url is will only used
+# in feed generation. If you don't have one,  leave here blank.
+url = "http://jurrevanbergen.nl/blog/"
+
+# which theme to use?
+theme = "classic"
+
+[author]
+name = "Jurre"
+email = "drwhax@2600nl.net"  # your email address
+
+[disqus]
+# your disqus's short name for this blog
+shortname = "jurresthoughts"
+
+[theme]  # you can reset theme's default configuration here
+
+github = "DrWhax"  # classic theme requires your github username
